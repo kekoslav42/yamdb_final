@@ -1,6 +1,6 @@
 ![yamdb workflow](https://github.com/kekoslav42/yamdb_final/workflows/yamdb_workflow/badge.svg)
 
-# infra_sp2 // api_yamdb
+# yamdb_final
 
 Выполнялось api_yamdb с **[chaplinskiy](https://github.com/chaplinskiy)** & **[Seva138](https://github.com/Seva138)**
 ## Описание
