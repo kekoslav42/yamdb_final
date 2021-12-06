@@ -1,14 +1,8 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from .views import (
-    UserViewSet,
-    TitleViewSet,
-    CategorieViewSet,
-    CommentsViewSet,
-    GenreViewSet,
-    ReviewsViewSet
-)
+from .views import (CategorieViewSet, CommentsViewSet, GenreViewSet,
+                    ReviewsViewSet, TitleViewSet, UserViewSet)
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet,
