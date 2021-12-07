@@ -16,7 +16,7 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```bash
-git clone https://github.com/kekoslav42/infra_sp2.git
+git clone https://github.com/kekoslav42/yamdb_final.git
 ```
 
 ## Установка
@@ -59,6 +59,34 @@ docker-compose exec web python manage.py migrate
 ```bash
 docker-compose exec web python manage.py createsuperuser
 ```
+
+## Деплой на удаленный сервер
+Для запуска проекта на удаленном сервере необходимо:
+- скопировать на сервер файлы `docker-compose.yaml`, `.env`, `nginx`:
+```
+scp docker-compose.yaml  <user>@<server-ip>:
+scp .env <user>@<server-ip>:
+scp -r nginx/ <user>@<server-ip>:
+
+```
+- создать переменные окружения в разделе `secrets` гитхаб репозитория:
+```
+DOC_PASS # Пароль от Docker Hub
+DOC_USER # Логин от Docker Hub
+HOST # Публичный ip адрес сервера
+USER # Пользователь зарегистрированный на сервере
+PASSPHRASE # Если ssh-ключ защищен фразой-паролем
+SSH_KEY # Приватный ssh-ключ
+TELEGRAM_TO # ID телеграм-аккаунта
+TELEGRAM_TOKEN # Токен бота
+```
+
+### При пуше в master:
+1. Проверка кода на соответствие стандарту PEP8 (с помощью пакета flake8) и запуск pytest из репозитория yamdb_final
+2. Сборка докер-образов.
+3. Пуш на DockerHub.
+3. Деплой на удаленный сервер.
+4. Информирование в телеграмм.
 
 
 ## Инструкция по API
