@@ -13,7 +13,6 @@ services:
       - ./.env
   web:
     image: kekoslav/yamdb_final
-    build: .
     restart: always
     volumes:
       - static_value:/app/static/
