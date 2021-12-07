@@ -19,7 +19,7 @@
 git clone https://github.com/kekoslav42/yamdb_final.git
 ```
 
-## Установка
+## Установка на локальный сервер
 1. Установка docker и docker-compose
 Инструкция по установке доступна в официальной инструкции
 
