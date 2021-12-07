@@ -1,6 +1,5 @@
 version: '2.2'
 
-
 services:
   db:
     image: postgres:13-alpine
