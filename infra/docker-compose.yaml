@@ -1,5 +1,9 @@
 version: '2.2'
 
+volumes:
+  static_value:
+  media_value:
+
 services:
   db:
     image: postgres:13-alpine
@@ -32,7 +36,3 @@ services:
 
     depends_on:
       - web
-
-volumes:
-  static_value:
-  media_value:
