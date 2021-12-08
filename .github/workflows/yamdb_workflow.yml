@@ -45,9 +45,11 @@ jobs:
           no-cache: true
           context: ./api_yamdb/
           tags: ${{ secrets.DOC_USER }}/yamdb_final
-  deploy:
+
+  deploy: # Добавлено создание/применение миграций, сбор статики. Деплой только если пуш в мастер
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
