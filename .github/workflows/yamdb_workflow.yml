@@ -57,7 +57,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            docker pull ${{ secrets.DOC_USER }}/yamdb_final
+            sudo docker pull ${{ secrets.DOC_USER }}/yamdb_final
             sudo docker-compose stop
             sudo docker-compose rm web
             sudo docker-compose up -d
