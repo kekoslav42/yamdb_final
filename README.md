@@ -1,5 +1,4 @@
 ![yamdb workflow](https://github.com/kekoslav42/yamdb_final/workflows/yamdb_workflow/badge.svg)
-(Ну да, из-за приватности, если нужно могу скрином отправить в слаке)
 # yamdb_final
 
 Выполнялось api_yamdb с **[chaplinskiy](https://github.com/chaplinskiy)** & **[Seva138](https://github.com/Seva138)**
@@ -23,7 +22,7 @@ http://51.250.16.59/api/v1/genres/
 http://51.250.16.59/api/v1/titles/
 ```
 Документация:
-http://51.250.16.59/redoc/ (Редок сломан, чиню =) )
+http://51.250.16.59/redoc/
 
 
 ## Как запустить проект:
