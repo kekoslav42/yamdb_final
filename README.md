@@ -1,7 +1,7 @@
 ![yamdb workflow](https://github.com/kekoslav42/yamdb_final/workflows/yamdb_workflow/badge.svg)
 # yamdb_final
 
-Выполнялось api_yamdb с **[chaplinskiy](https://github.com/chaplinskiy)** & **[Seva138](https://github.com/Seva138)**
+Выполнялось api_yamdb с **[chaplinskiy](https://github.com/chaplinskiy)** & **[Seva138](https://github.com/Seva138)**. Я занимался приложением users.
 ## Описание
 
 Проект **YaMDb** собирает отзывы пользователей на произведения. 
